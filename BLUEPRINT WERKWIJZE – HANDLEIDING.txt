@@ -1,0 +1,68 @@
+=============================
+ BLUEPRINT WERKWIJZE – HANDLEIDING
+=============================
+
+DOEL
+----
+De blueprint zorgt dat ChatGPT (Nova) altijd direct weet waar we waren 
+en hoe ze moet reageren, zonder dat ik alles opnieuw hoef uit te leggen.
+Ik gebruik één doorlopend document per project.
+
+STRUCTUUR VAN DE MASTER BLUEPRINT
+---------------------------------
+BEGIN BLUEPRINT
+PROJECTNAAM:         [Naam]
+VERSIENUMMER:        [vX.X – datum]
+HOOFDDOEL:           [Kern van het project]
+HOE CHATGPT MOET REAGEREN:
+  - [Reactiestijlregels]
+HUIDIGE SNAPSHOT:    [Actuele stand van zaken]
+SCENEANALYSE LOG:    [Bestandsnaam/log info]
+VOLGENDE ACTIES:
+  1. [Eerste taak]
+  2. [Tweede taak]
+LOG:
+  - [Datum] – [Gebeurtenis/beslissing]
+END BLUEPRINT
+
+SCENARIO'S
+----------
+
+1) NIEUW VULLEN (eerste keer of helemaal opnieuw)
+   Typ:
+   "Nova, vul nu de master blueprint in voor dit project 
+    op basis van alles wat we tot nu toe hebben gedaan."
+
+2) AANVULLEN (na nieuwe ontwikkelingen)
+   Typ:
+   "Nova, vul de bestaande blueprint aan met wat we sinds 
+    de laatste versie hebben gedaan."
+   → Nova werkt Snapshot, Queue, Log bij en verhoogt versienummer.
+
+3) VERDER GAAN (zonder bijwerken)
+   Typ:
+   "Nova, gebruik de laatste blueprint als basis en ga verder bij [onderwerp/stap]."
+   → Nova pakt context op en gaat direct door.
+
+4) RESETTEN NAAR LEGE MASTER
+   Typ:
+   "Nova, geef de lege master blueprint."
+   → Nova stuurt het ongevulde template zodat ik opnieuw kan beginnen.
+
+BESTANDEN TOEVOEGEN
+-------------------
+- Voeg bij de blueprint een SceneAnalyse-log (.json of .txt) 
+  als extra context.
+- Benoem altijd duidelijk de bestandsnaam in het veld SCENEANALYSE LOG.
+
+VERSIEBEHEER
+------------
+- Sla de blueprint steeds op als: PROJECTNAAM_Blueprint_vX.X.txt
+- Elke keer bij aanvullen → versienummer +0.1 verhogen.
+
+TIPS
+----
+- Houd HUIDIGE SNAPSHOT kort maar feitelijk.
+- Zet alleen haalbare taken in VOLGENDE ACTIES.
+- LOG bevat alleen belangrijke beslissingen en gebeurtenissen.
+- HOE CHATGPT MOET REAGEREN blijft in principe hetzelfde per project.
