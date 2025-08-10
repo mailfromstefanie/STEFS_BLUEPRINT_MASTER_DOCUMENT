@@ -27,24 +27,15 @@ A ready-to-use, structured template for filling in complete project information.
 
 ---
 
-## 💡 GitHub Repo Tagline
-> A structured "Engineer Mode" blueprint system for AI-assisted projects — keep full context, version history, and next actions in one reusable text file for seamless continuity between sessions.
-
----
-
-## 🎯 Optional Marketing-Friendly Tagline
-Stay organized and in control: one simple text file to capture your project's context, progress, and next steps — making AI-assisted development faster and smarter.
-
 STEFSTOOLS – Blueprint Workflow & Engineer Mode
 ===============================================
 
-Overview
---------
-This repository contains the Blueprint Workflow and Master Blueprint Template – Engineer Mode,
-a system for keeping full project context between AI sessions, ensuring smooth continuation
-without having to re-explain everything.
+Description
+-----------
+A structured "Engineer Mode" blueprint system for AI-assisted projects — keep full context,
+version history, and next actions in one reusable text file for seamless continuity between sessions.
 
-It is designed for:
+Designed for:
 - Technical projects (Unity, VRChat, scripting, tools)
 - Consistent project tracking
 - Seamless onboarding for AI assistants or collaborators
@@ -53,13 +44,13 @@ It is designed for:
 BLUEPRINT WORKFLOW – USER GUIDE
 ------------------------------------------------------------
 
-PURPOSE
+Purpose
 -------
 The blueprint ensures that ChatGPT (Nova) always knows exactly where we left off and how to respond,
 without me having to explain everything again from scratch.
 I keep one continuous document per project.
 
-MASTER BLUEPRINT STRUCTURE
+Master Blueprint Structure
 --------------------------
 BEGIN BLUEPRINT
 PROJECT NAME:         [Name]
@@ -76,85 +67,67 @@ LOG:
   - [Date] – [Event / decision]
 END BLUEPRINT
 
-SCENARIOS
+Scenarios
 ---------
-
-1) NEW BLUEPRINT (first time or full restart)
+1) NEW BLUEPRINT (first time or restart)  
    Nova, fill in the master blueprint for this project based on everything we have done so far.
 
-2) UPDATE BLUEPRINT (after new developments)
-   Nova, update the existing blueprint with what we have done since the last version.
-   → Nova updates the Snapshot, Queue, and Log, and increases the version number.
+2) UPDATE BLUEPRINT (after new developments)  
+   Nova, update the existing blueprint with what we have done since the last version.  
+   → Updates Snapshot, Queue, Log, and increases version number.
 
-3) CONTINUE WITHOUT UPDATING
+3) CONTINUE WITHOUT UPDATING  
    Nova, use the latest blueprint as the basis and continue at [topic/step].
-   → Nova picks up the context and continues immediately.
 
-4) RESET TO EMPTY MASTER
+4) RESET TO EMPTY MASTER  
    Nova, give the empty master blueprint.
-   → Nova sends the unfilled template so I can start fresh.
 
-ADDING FILES
+Adding Files
 ------------
 - Attach a Scene Analysis log (.json or .txt) to the blueprint for extra context.
 - Always clearly name the file in the SCENE ANALYSIS LOG field.
 
-VERSION CONTROL
+Version Control
 ---------------
-- Always save the blueprint as: PROJECTNAME_Blueprint_vX.X.txt
-- Every time you update → increase the version number by 0.1.
+- Save as: PROJECTNAME_Blueprint_vX.X.txt
+- Each update → increase version number by 0.1
 
-TIPS
+Tips
 ----
-- Keep the CURRENT SNAPSHOT short but factual.
-- Only put realistic, actionable tasks in NEXT ACTIONS.
-- The LOG should only contain important decisions and events.
-- HOW CHATGPT SHOULD RESPOND should generally stay the same for each project.
+- Keep CURRENT SNAPSHOT short and factual.
+- Only list realistic, actionable tasks in NEXT ACTIONS.
+- LOG contains only key decisions and events.
+- HOW CHATGPT SHOULD RESPOND usually stays the same per project.
 
 ------------------------------------------------------------
 MASTER BLUEPRINT TEMPLATE – ENGINEER MODE
 ------------------------------------------------------------
-A ready-to-use, structured template for filling in complete project information.
+Ready-to-use, structured template for complete project information.
 
-Includes sections for:
+Includes:
 - Project name, version, and main goal
 - AI working mode instructions (Engineer Mode)
 - Current project state (Snapshot)
 - Next actions (Queue)
 - Decision and change log
 
-Purpose: Designed for technical projects with a focus on consistency, version control,
-and fast onboarding for collaborators or AI assistants.
+Purpose: Consistency, version control, and fast onboarding for collaborators or AI.
 
 ------------------------------------------------------------
-EXAMPLE PHRASES FOR DIFFERENT SCENARIOS
+EXAMPLE PHRASES
 ------------------------------------------------------------
 
-Scenario 1 – Continue where you left off
-Use this as basis. You are in ENGINEER MODE. Continue at "NEXT ACTIONS (Queue)".
-Keep my project structure intact.
+Continue where you left off:
+Use this as basis. You are in ENGINEER MODE. Continue at "NEXT ACTIONS (Queue)". Keep my project structure intact.
 
-Scenario 2 – Update the blueprint after changes
+Update blueprint:
 Fill in the blueprint update:
 - Add today’s changes to the LOG
-- Update CURRENT SNAPSHOT with new details
-- Refresh NEXT ACTIONS with the next tasks
+- Update CURRENT SNAPSHOT
+- Refresh NEXT ACTIONS
 
-Scenario 3 – Create a new blueprint for another project
-Create a Master Blueprint using the template, for my new project about [short project description].
+New blueprint for another project:
+Create a Master Blueprint using the template for my new project about [short project description].
 
-Scenario 4 – Quick minimal context when tokens are low
+Minimal context when tokens are low:
 Quick blueprint: [short 1–2 sentence project summary].
-
-------------------------------------------------------------
-GITHUB REPO TAGLINE
-------------------------------------------------------------
-A structured "Engineer Mode" blueprint system for AI-assisted projects — keep full context,
-version history, and next actions in one reusable text file for seamless continuity between sessions.
-
-------------------------------------------------------------
-OPTIONAL MARKETING-FRIENDLY TAGLINE
-------------------------------------------------------------
-Stay organized and in control: one simple text file to capture your project's context, progress,
-and next steps — making AI-assisted development faster and smarter.
-
